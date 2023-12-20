@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/boxProject/static/css/main.88faa535.css",
+    "main.js": "/boxProject/static/js/main.4bbd6dec.js",
+    "static/media/HomeImage.png": "/boxProject/static/media/HomeImage.7ffc13949c39a141bd6f.png",
+    "static/media/sara_PFP.png": "/boxProject/static/media/sara_PFP.e7db5f94a185108cfe42.png",
+    "static/media/ahmed_PFP.png": "/boxProject/static/media/ahmed_PFP.9d0cff1cbaf261138010.png",
+    "static/media/blurGraphic.png": "/boxProject/static/media/blurGraphic.da9e058499e69099a82f.png",
+    "static/media/blurCWeb.png": "/boxProject/static/media/blurCWeb.4ceadc21cacefaf4b398.png",
+    "static/media/Project_card_One.png": "/boxProject/static/media/Project_card_One.04ce4229b6bcbf10f875.png",
+    "static/media/blurCApplication.png": "/boxProject/static/media/blurCApplication.f44f286f2b39ba6a810d.png",
+    "static/media/abdullah-PFP.png": "/boxProject/static/media/abdullah-PFP.c7db7fe42f81b86e75f8.png",
+    "static/media/blurAppplication.png": "/boxProject/static/media/blurAppplication.46319f85b93af5010856.png",
+    "static/media/blurProject.png": "/boxProject/static/media/blurProject.c03c7b357650cdd9c121.png",
+    "static/media/blurWeb.png": "/boxProject/static/media/blurWeb.93350abb0d4128a0ddee.png",
+    "static/media/blurMVP.png": "/boxProject/static/media/blurMVP.14893734c4d54d1992f1.png",
+    "static/media/CWeb.png": "/boxProject/static/media/CWeb.2a34dcdbfadb75e3f3e4.png",
+    "static/media/appImage.png": "/boxProject/static/media/appImage.5c71982501d0fbfe95dd.png",
+    "static/media/Vector 3.png": "/boxProject/static/media/Vector 3.62e575fe16249e63860f.png",
+    "static/media/Vector 2.png": "/boxProject/static/media/Vector 2.38f64e11d4ddf604c9f9.png",
+    "static/media/project.png": "/boxProject/static/media/project.709637aaac144abb0d0c.png",
+    "static/media/Graphic.png": "/boxProject/static/media/Graphic.20e9d1d85150366e3d21.png",
+    "static/media/mvp.png": "/boxProject/static/media/mvp.235c7b2b3cbd158b210e.png",
+    "static/media/Web.png": "/boxProject/static/media/Web.e553e0a48f8f03692357.png",
+    "static/media/CApplication.png": "/boxProject/static/media/CApplication.a87e76189d7b391c8b10.png",
+    "static/media/boxImage.png": "/boxProject/static/media/boxImage.5fc09e93af5da7031ec1.png",
+    "index.html": "/boxProject/index.html",
+    "main.88faa535.css.map": "/boxProject/static/css/main.88faa535.css.map",
+    "main.4bbd6dec.js.map": "/boxProject/static/js/main.4bbd6dec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88faa535.css",
+    "static/js/main.4bbd6dec.js"
+  ]
+}
