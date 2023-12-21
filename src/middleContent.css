@@ -21,7 +21,7 @@ h2{
 
 }
 
-button{
+#myButton{
     font-family: "Changa";
 }
 
@@ -47,6 +47,7 @@ p{
     font-weight: 500;
    
 }
+
 #myMainText{
     line-height: 110px;
     width: 800px; 
@@ -139,7 +140,7 @@ p{
 
 }
 
-.myBox{
+#myBox{
     width: 400px;
    
 }
@@ -160,7 +161,7 @@ p{
 
 
 @media (max-width: 640px) {
-    .myBox{
+    #myBox{
         margin: 0 auto;
     }
 
@@ -168,7 +169,7 @@ p{
 }
 
 @media (max-width: 470px) {
-    .myBox{
+    #myBox{
         width: 95%;
         margin: 0 auto;
     }
