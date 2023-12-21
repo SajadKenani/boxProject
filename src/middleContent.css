@@ -47,7 +47,6 @@ p{
     font-weight: 500;
    
 }
-
 #myMainText{
     line-height: 110px;
     width: 800px; 
@@ -55,7 +54,7 @@ p{
 }
 
 @media (max-width: 1023px) {
-    .myMainText{
+    #myMainText{
     line-height: 60px;
     
     }
@@ -69,7 +68,7 @@ p{
 }
 
 @media (max-width: 900px) {
-    .myMainText{
+    #myMainTextt{
     line-height: 60px;
     
     }
