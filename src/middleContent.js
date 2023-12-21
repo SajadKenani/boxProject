@@ -64,8 +64,8 @@ export const MiddleContent = () => {
                 </div>
 
                 <div className="flex justify-end item-end pt-10 pb-28 button ">
-                    <button className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400">تصـفـح أعمالنا</button>
-                    <button className="text-sm text-white w-40 h-10 rounded-full bg-blue-400">أعرف المزيد</button>
+                    <button id="myButton" className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400">تصـفـح أعمالنا</button>
+                    <button id="myButton" className="text-sm text-white w-40 h-10 rounded-full bg-blue-400">أعرف المزيد</button>
 
                 </div>
 
@@ -126,7 +126,7 @@ export const MiddleContent = () => {
           <div className="" style={{alignContent:"center", display:"flex", justifyContent:"center"}} >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{width:"1140px"}}>
 
-            <div className=" w-6/2 sm:w-10 overflow-hidden items-center mt-52 myBox" >
+            <div className=" w-6/2 sm:w-10 overflow-hidden items-center mt-52" id="myBox">
 
              <div className="flex justify-end p-3 -mb-4">
                  <img class=" h-12 w-12 object-cover mt-5" src={boxImage} alt="Card Image" />
@@ -138,8 +138,8 @@ export const MiddleContent = () => {
               </div>
 
               <div className="lg:flex justify-end item-end -pt-3 pb-28 mr-3 md:grid md:mr-0">
-                    <button className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400"> أخر مشروع منجز</button>
-                    <button className="text-sm text-white w-56 h-10 rounded-full bg-blue-400">مشاهدة الفيديو التعريفي</button>
+                    <button id="myButton" className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400"> أخر مشروع منجز</button>
+                    <button id="myButton" className="text-sm text-white w-56 h-10 rounded-full bg-blue-400">مشاهدة الفيديو التعريفي</button>
               </div>
 
             </div>
