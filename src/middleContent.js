@@ -56,7 +56,7 @@ export const MiddleContent = () => {
 
 
                 <div className="flex justify-end item-end">
-                <h1 className="myMainText lg:text-7xl md:text-4xl sm:text-4xl text-4xl text-bold" >إبداع رقمي يتجسّد في تصميم مواقع مبــتــكرة</h1>
+                <h1 id="myMainText" className=" lg:text-7xl md:text-4xl sm:text-4xl text-4xl text-bold" >إبداع رقمي يتجسّد في تصميم مواقع مبــتــكرة</h1>
                 </div>
 
                 <div className="flex justify-end item-end mt-5" >
