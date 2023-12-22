@@ -6,6 +6,8 @@ import copyLinkIcon from "./images/copyLinkIcon.png"
 import myVector from "./images/Vector 2.png"
 import myVector2 from "./images/Vector 4.png"
 import myVector3 from "./images/Vector 3.png"
+import myVector4 from "./images/repititive-questions-vector.png"
+import myVector5 from "./images/Vector 5.png"
 
 import myPenIcom from "./images/penIcon.png"
 import moneySignIcon from "./images/moneySignIcon.png"
@@ -36,27 +38,60 @@ import Graphic from "./images/Graphic.png"
 import mvp from "./images/mvp.png"
 import project from "./images/project.png"
 
+import whatsapp_Icon from "./images/whatsapp-icon.png";
+import facebook_Icon from "./images/facebook-icon.png";
+import phonecall_Icon from "./images/phonecall-icon.png";
+import email_Icon from "./images/email-icon.png"
 
+import smallGrayLink from "./images/small-gray-link.png"
+
+import React, { useState } from "react";
 
 import Project_card_One from "./images/Project_card_One.png"
 
 import {paddingLR} from "./App"
 
+
 const myPadding = 10;
 
-console.log("pp")
-
-
 export const MiddleContent = () => {
+
+  const [myProjectone, usemyprojectone] = useState(false);
+  const [myProjecttwo, usemyprojecttwo] = useState(false);
+  const [myProjectthree, usemyprojectthree] = useState(false);
+  const [myProjectfour, usemyprojectfour] = useState(false);
+  const [myProjectfive, usemyprojectfive] = useState(false);
+
+  const ProjectHover = (projectId) => {
+
+    if (eval("myProject" + projectId) === false){
+
+      usemyprojectone(false)
+      usemyprojecttwo(false)
+      usemyprojectthree(false)
+      usemyprojectfour(false)
+      usemyprojectfive(false)
+
+      eval("usemyproject" + projectId)(true);
+    }
+
+    else {eval("usemyproject" + projectId)(false);}
+  
+
+  }
+
+
+
     return (
-        <div>
+        <div >
+          <div style={{height: "60px"}}></div>
             {/* Home Section */}
             <img className=" homeImage " src={HomeImage} />
             <div className=" homeImageContent  justify-end  p-70 " style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
 
 
                 <div className="flex justify-end item-end">
-                <h1 id="myMainText" className=" lg:text-7xl md:text-4xl sm:text-4xl text-4xl text-bold" >إبداع رقمي يتجسّد في تصميم مواقع مبــتــكرة</h1>
+                <h1 id="myMainText" className=" lg:text-7xl md:text-4xl sm:text-4xl text-4xl text-bold" style={{fontWeight:"600"}}>إبداع رقمي يتجسّد في تصميم مواقع مبــتــكرة</h1>
                 </div>
 
                 <div className="flex justify-end item-end mt-5" >
@@ -93,21 +128,86 @@ export const MiddleContent = () => {
 
             <div className="mainOurProject-Section" style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
 
-                <h1 className="text-4xl p-10 text-bold" style={{fontWeight:"500", paddingTop:"60px"}} >مشــــاريــــعنا</h1>
+                <h1 className="text-4xl p-10 " style={{fontWeight:"600", paddingTop:"60px"}} >مشــــاريــــعنا</h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6 " style={{position:"relative", zIndex:"4327"}}>
-                <img className="m-3 object-cover rounded-md overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" />
+
+            {myProjecttwo ? 
+              <div  className="m-3 object-cover rounded-lg overflow-hidden shadow-md bg-white" style={{width: "100%"}} onMouseLeave={() => ProjectHover("two")}>
+                <p className="p-5 pb-3" style={{fontSize: "13px"}}> نبذة عن المشروع </p>
+                <h3 className="p-5 pt-0 pb-3" style={{fontSize: "20px", fontWeight: "600"}}> مشروع الموقع لشركة احمد للصياغة </h3>
+                <p className="p-5 pt-0" style={{color: "#242424"}}> يستعرض هذا الموقع جميع اعمال شركة احمد من المصوغات الذهبية و الفضية, و يحتوي ايضا على الخدمات المتوفرة و اقسام للأسئلة و الاجوبة و ايضابطاقات و ازرار تساعد على التواصل </p>
+                <div className="flex " style={{right: "0", justifyContent: "end"}}>
+                  <img src={smallGrayLink} className="w-3 h-3 mt-1"/>
+                  <p style={{color: "#242424", fontSize:"13px"}} className=" p-5 pt-0"> أنقر لمعـــاينــة حية   </p>
+
+                </div>
+              </div> : 
+              <img className="m-3 object-cover rounded-lg overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" onMouseEnter={() => ProjectHover("two")} />
+              }
+
+
+            {myProjectone ? 
+              <div  className="m-3 object-cover rounded-lg overflow-hidden shadow-md bg-white" style={{width: "100%"}} onMouseLeave={() => ProjectHover("one")}>
+                <p className="p-5 pb-3" style={{fontSize: "13px"}}> نبذة عن المشروع </p>
+                <h3 className="p-5 pt-0 pb-3" style={{fontSize: "20px", fontWeight: "600"}}> مشروع الموقع لشركة احمد للصياغة </h3>
+                <p className="p-5 pt-0" style={{color: "#242424"}}> يستعرض هذا الموقع جميع اعمال شركة احمد من المصوغات الذهبية و الفضية, و يحتوي ايضا على الخدمات المتوفرة و اقسام للأسئلة و الاجوبة و ايضابطاقات و ازرار تساعد على التواصل </p>
+                <div className="flex " style={{right: "0", justifyContent: "end"}}>
+                  <img src={smallGrayLink} className="w-3 h-3 mt-1"/>
+                  <p style={{color: "#242424", fontSize:"13px"}} className=" p-5 pt-0"> أنقر لمعـــاينــة حية   </p>
+
+                </div>
+              </div> : 
+              <img className="m-3 object-cover rounded-lg overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" onMouseEnter={() => ProjectHover("one")} />
+              } 
+                
     
-                <img className="m-3 object-cover rounded-md overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" />
+
           
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 mt-1" style={{position:"relative", zIndex:"4327"}}>
-                <img className="m-3 object-cover rounded-md overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" />
-    
-                <img className="m-3 object-cover rounded-md overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" />
- 
-                <img className="m-3 object-cover rounded-md overflow-hidden shadow-md" src={Project_card_One} alt="Card Image" />
+            {myProjectfive ? 
+              <div  className="m-3 object-cover rounded-lg overflow-hidden shadow-md bg-white" style={{width: "100%"}} onMouseLeave={() => ProjectHover("five")}>
+                <p className="p-5 pb-1" style={{fontSize: "10px"}}> نبذة عن المشروع </p>
+                <h3 className="p-5 pt-0 pb-2" style={{fontSize: "18px", fontWeight: "500"}}> مشروع الموقع لشركة احمد للصياغة </h3>
+                <p className="p-5 pt-0" style={{color: "#242424", fontSize: "12px", fontWeight:"400"}}> يستعرض هذا الموقع جميع اعمال شركة احمد من المصوغات الذهبية و الفضية, و يحتوي ايضا على الخدمات المتوفرة و اقسام للأسئلة و الاجوبة و ايضابطاقات و ازرار تساعد على التواصل مع السشركة لغاية الطلب او سؤال الأسئلة </p>
+                <div className="flex pr-2" style={{right: "0", justifyContent: "end"}}>
+                  <img src={smallGrayLink} className="w-3 h-3 mt-1"/>
+                  <p style={{color: "#242424", fontSize:"12px"}} className=" p-3 pt-0"> أنقر لمعـــاينــة حية   </p>
+
+                </div>
+              </div> : 
+              <img className="m-3 object-cover rounded-lg overflow-hidden shadow-md" style={{height: "216px"}} src={Project_card_One} alt="Card Image" onMouseEnter={() => ProjectHover("five")} />
+              } 
+
+            {myProjectfour ? 
+              <div  className="m-3 object-cover rounded-lg overflow-hidden shadow-md bg-white" style={{width: "100%"}} onMouseLeave={() => ProjectHover("four")}>
+                <p className="p-5 pb-1" style={{fontSize: "10px"}}> نبذة عن المشروع </p>
+                <h3 className="p-5 pt-0 pb-2" style={{fontSize: "18px", fontWeight: "500"}}> مشروع الموقع لشركة احمد للصياغة </h3>
+                <p className="p-5 pt-0" style={{color: "#242424", fontSize: "12px", fontWeight:"400"}}> يستعرض هذا الموقع جميع اعمال شركة احمد من المصوغات الذهبية و الفضية, و يحتوي ايضا على الخدمات المتوفرة و اقسام للأسئلة و الاجوبة و ايضابطاقات و ازرار تساعد على التواصل مع السشركة لغاية الطلب او سؤال الأسئلة </p>
+                <div className="flex pr-2" style={{right: "0", justifyContent: "end"}}>
+                  <img src={smallGrayLink} className="w-3 h-3 mt-1"/>
+                  <p style={{color: "#242424", fontSize:"12px"}} className=" p-3 pt-0"> أنقر لمعـــاينــة حية   </p>
+
+                </div>
+              </div> : 
+              <img className="m-3 object-cover rounded-lg overflow-hidden shadow-md" style={{height: "216px"}} src={Project_card_One} alt="Card Image" onMouseEnter={() => ProjectHover("four")} />
+              } 
+
+            {myProjectthree ? 
+              <div  className="m-3 object-cover rounded-lg overflow-hidden shadow-md bg-white" style={{width: "100%"}} onMouseLeave={() => ProjectHover("three")}>
+                <p className="p-5 pb-1" style={{fontSize: "10px"}}> نبذة عن المشروع </p>
+                <h3 className="p-5 pt-0 pb-2" style={{fontSize: "18px", fontWeight: "500"}}> مشروع الموقع لشركة احمد للصياغة </h3>
+                <p className="p-5 pt-0" style={{color: "#242424", fontSize: "12px", fontWeight:"400"}}> يستعرض هذا الموقع جميع اعمال شركة احمد من المصوغات الذهبية و الفضية, و يحتوي ايضا على الخدمات المتوفرة و اقسام للأسئلة و الاجوبة و ايضابطاقات و ازرار تساعد على التواصل مع السشركة لغاية الطلب او سؤال الأسئلة </p>
+                <div className="flex pr-2" style={{right: "0", justifyContent: "end"}}>
+                  <img src={smallGrayLink} className="w-3 h-3 mt-1"/>
+                  <p style={{color: "#242424", fontSize:"12px"}} className=" p-3 pt-0"> أنقر لمعـــاينــة حية   </p>
+
+                </div>
+              </div> : 
+              <img className="m-3 object-cover rounded-lg overflow-hidden shadow-md" style={{height: "216px"}} src={Project_card_One} alt="Card Image" onMouseEnter={() => ProjectHover("three")} />
+              } 
           
             </div>
 
@@ -121,7 +221,7 @@ export const MiddleContent = () => {
 
             {/* Our Goals and Princples Section  */}
 
-            <h1 className="text-4xl p-10 text-bold"  >المــبــادئ و الأهـداف</h1>
+            <h1 className="text-4xl p-10 text-bold" style={{fontWeight:"600", marginTop:"50px"}} >المــبــادئ و الأهـداف</h1>
 
           <div className="" style={{alignContent:"center", display:"flex", justifyContent:"center"}} >
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3" style={{width:"1140px"}}>
@@ -137,7 +237,7 @@ export const MiddleContent = () => {
                 <p className="p-2" >نهدف لجعل كل مشروع قصة لتجربة لا تضاهى, نسعى لتحويل كل ثانية يقضيها المستخدم على منصتك, وقتاً مفيداً للجميع - و ايضاً ممتعاً - لتبقى انت و فريقك في اذهانهم لفترة طويلة!</p>
               </div>
 
-              <div className="lg:flex justify-end item-end -pt-3 pb-28 mr-3 md:grid md:mr-0">
+              <div className="lg:flex justify-end item-end -pt-3 pb-28 mr-3 md:grid md:mr-3">
                     <button id="myButton" className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400"> أخر مشروع منجز</button>
                     <button id="myButton" className="text-sm text-white w-56 h-10 rounded-full bg-blue-400">مشاهدة الفيديو التعريفي</button>
               </div>
@@ -145,7 +245,7 @@ export const MiddleContent = () => {
             </div>
 
             <div className="mt-6 ">
-                <div class="w-72 mx-auto rounded-md overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#61B7EA"}}>
+                <div className="w-72 mx-auto rounded-lg overflow-hidden mb-8 " style={{backgroundColor:"#61B7EA", boxShadow: "1px 1px 15px 4px #0000000c"}}>
 
                   <div className="flex justify-end p-3 -mb-4">
                     <img className=" h-12 w-12 object-cover mt-2 mr-2" src={bagIcon} alt="Card Image" />
@@ -153,12 +253,12 @@ export const MiddleContent = () => {
 
                   <div className="p-2 justify-end mb-5">
                     <h2 className="text-xl font-semibold -mb-1 p-2 text-white" style={{textAlign:"end"}}>الأحترافية و المهنية</h2>
-                    <p className="text-gray-600 p-2 text-white">الطابع المهني و الاحترافية تسمو على جميع منتجاتنا و اعمالنا, و ايضا هي اولويتنا في جميع التعاملات, المشاريع و العقود.</p> 
+                    <p className="text-black-600 p-2 text-white">الطابع المهني و الاحترافية تسمو على جميع منتجاتنا و اعمالنا, و ايضا هي اولويتنا في جميع التعاملات, المشاريع و العقود.</p> 
                   </div>
 
                 </div>
     
-                <div className="w-72 mx-auto bg-white rounded-md overflow-hidden shadow-md mb-8 ">
+                <div className="w-72 mx-auto rounded-lg overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#F5FCFF", boxShadow: "1px 1px 15px 4px #0000000c"}}>
 
                   <div className="flex justify-end p-3 -mb-4">
                     <img className=" h-12 w-12 object-cover mt-2 mr-2"  src={starsIcon} alt="Card Image" />
@@ -166,12 +266,12 @@ export const MiddleContent = () => {
 
                   <div className="p-2 justify-end mb-5">
                     <h2 className="text-xl font-semibold -mb-1 p-2" style={{textAlign:"end"}}>الدقة والجودة</h2>
-                    <p className="text-gray-600 p-2">نحن نضمن الدقة والجودة في كل تفاصيل تصميم المواقع الإلكترونية لضمان تحقيق أهدافك وتلبية توقعات عملائك بسهولة وسرعة.</p>      
+                    <p className="text-black-600 p-2">نحن نضمن الدقة والجودة في كل تفاصيل تصميم المواقع الإلكترونية لضمان تحقيق أهدافك وتلبية توقعات عملائك بسهولة وسرعة.</p>      
                   </div>
 
                 </div>
     
-                <div className="w-72 mx-auto bg-white rounded-md overflow-hidden shadow-md mb-8 ">
+                <div className="w-72 mx-auto rounded-lg overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#F5FCFF", boxShadow: "1px 1px 15px 4px #0000000c"}}> 
 
                   <div className="flex justify-end p-3 -mb-4">
                     <img className=" h-12 w-12 object-cover mt-2 mr-2"  src={clientAssistanceIcon} alt="Card Image" />
@@ -179,7 +279,7 @@ export const MiddleContent = () => {
 
                    <div className="p-2 justify-end mb-5">
                     <h2 className="text-xl font-semibold -mb-1 p-2" style={{textAlign:"end"}}> خدمة عملاء مستمرة</h2>
-                    <p className="text-gray-600 p-2">نحن نفهم أهمية التواصل والاستجابة السريعة لاحتياجات عملائنا. سواء كنت تحتاج إلى دعم فني أو استشارة تقنية، فإن فريقنا دائمًا هنا للمساعدة.</p>      
+                    <p className="text-black-600 p-2">نحن نفهم أهمية التواصل والاستجابة السريعة لاحتياجات عملائنا. سواء كنت تحتاج إلى دعم فني أو استشارة تقنية، فإن فريقنا دائمًا هنا للمساعدة.</p>      
                   </div>
 
                 </div>
@@ -187,7 +287,7 @@ export const MiddleContent = () => {
 
              <div className="lg:-ml-28">
               
-                <div className="w-72 mx-auto bg-white rounded-md overflow-hidden shadow-md mb-8 ">
+                <div className="w-72 mx-auto rounded-lg overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#F5FCFF", boxShadow: "1px 1px 15px 4px #0000000c"}}>
                   
                   <div className="flex justify-end p-3 -mb-4">
                     <img className=" h-12 w-12 object-cover mt-2 mr-2" src={myPenIcom} alt="Card Image" />
@@ -195,12 +295,12 @@ export const MiddleContent = () => {
 
                   <div className="p-2 justify-end mb-5">
                     <h2 className="text-xl font-semibold -mb-1 p-2" style={{textAlign:"end"}}>أبتكار و تصميم رائع</h2>
-                    <p className="text-gray-600 p-2">نحن نجمع بين الإبداع والتصميم الاستثنائي لنقدم لك تجربة موقع إلكتروني فريدة تبرز علامتك التجارية بأفضل طريقة.</p>      
+                    <p className="text-black-600 p-2">نحن نجمع بين الإبداع والتصميم الاستثنائي لنقدم لك تجربة موقع إلكتروني فريدة تبرز علامتك التجارية بأفضل طريقة.</p>      
                   </div>
 
                 </div>
 
-                <div className="w-72 mx-auto rounded-md overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#61B7EA"}}>
+                <div className="w-72 mx-auto rounded-lg overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#61B7EA", boxShadow: "1px 1px 15px 4px #0000000c"}}>
 
                   <div className="flex justify-end p-3 -mb-4">
                     <img className=" h-12 w-12 object-cover mt-2 mr-2" src={moneySignIcon} alt="Card Image" />
@@ -208,12 +308,12 @@ export const MiddleContent = () => {
 
                   <div className="p-2 justify-end mb-5">
                     <h2 className="text-xl font-semibold -mb-1 p-2 text-white" style={{textAlign:"end"}}>أسعار تنافسية</h2>
-                    <p className="text-gray-600 p-2 text-white">نحن نجمع بين أمان البيانات والاستدامة التكنولوجية لضمان أداء موقعك بثبات ونجاح, لن يكون عليك القلق حيال اي من الهجمات الألكترونية!</p> 
+                    <p className="text-black-600 p-2 text-white">نحن نجمع بين أمان البيانات والاستدامة التكنولوجية لضمان أداء موقعك بثبات ونجاح, لن يكون عليك القلق حيال اي من الهجمات الألكترونية!</p> 
                   </div>
 
                 </div>
 
-            <div className="w-72 mx-auto bg-white rounded-md overflow-hidden shadow-md mb-8 ">
+            <div className="w-72 mx-auto rounded-lg overflow-hidden shadow-md mb-8 " style={{backgroundColor:"#F5FCFF", boxShadow: "1px 1px 15px 4px #0000000c"}}>
                   
                 <div className="flex justify-end p-3 -mb-3">
                   <img className=" h-10 w-15 object-cover mt-2 mr-2" src={speedIcon} alt="Card Image" />
@@ -221,7 +321,7 @@ export const MiddleContent = () => {
 
                 <div className="p-2 justify-end mb-5">
                   <h2 className="text-xl font-semibold -mb-1 p-2" style={{textAlign:"end"}}>سرعة الانجاز</h2>
-                  <p className="text-gray-600 p-2">نحن نجمع بين أمان البيانات والاستدامة التكنولوجية لضمان أداء موقعك بثبات ونجاح, لن يكون عليك القلق حيال اي من الهجمات الألكترونية!</p>      
+                  <p className="text-black-600 p-2">نحن نجمع بين أمان البيانات والاستدامة التكنولوجية لضمان أداء موقعك بثبات ونجاح, لن يكون عليك القلق حيال اي من الهجمات الألكترونية!</p>      
                 </div>
 
                </div>
@@ -256,18 +356,18 @@ export const MiddleContent = () => {
 
               <div className="p-4">
                 <img src={ahmed_pfp}  className="w-90" />
-                <p className="text-2xl p-2"> أحمد علي: المدير التنفيذي </p>
+                <p className="text-2xl p-2" style={{fontWeight:"600"}}> أحمد علي: المدير التنفيذي </p>
               </div>
                 
               <div className="p-4">
                 <img src={abdullah_pfp}  className="w-90" />
-                <p className="text-2xl p-2"> عبدالله ناصر: مسؤول فريق تصميم المواقع </p>
+                <p className="text-2xl p-2" style={{fontWeight:"600"}}> عبدالله ناصر: مسؤول فريق تصميم المواقع </p>
               </div>
              
 
               <div className="p-4">
                 <img src={sara_pfp} className="w-90" />
-                <p className="text-2xl p-2"> سارة محمد: مديرة المبيعات </p>
+                <p className="text-2xl p-2" style={{fontWeight:"600"}}> سارة محمد: مديرة المبيعات </p>
               </div>
   
               </div>
@@ -279,47 +379,56 @@ export const MiddleContent = () => {
             <div style={{backgroundColor:"#F5FCFF"}}> 
 
  
-              <h1 className=" text-4xl p-2 pt-7" style={{color:"#61B7EA"}}>الخـــدمـات</h1>
+              <h1 className=" text-4xl p-2 pt-10 pb-2" style={{color:"#61B7EA", fontWeight:"600"}}>الخـــدمـات</h1>
 
-              <div className="flex justify-center servicesPara" style={{display:"flex", justifyContent:"center", margin: "0 auto"}}>
+              <div className="flex justify-center servicesPara pb-6" style={{display:"flex", justifyContent:"center", margin: "0 auto"}}>
               <p color="#242424" style={{textAlign:"center", margin:"0 auto"}}>أدناه جميع الخدمات التي تقدمها شركتنا, يزداد عدد الخدمات التي نقدمها دوماً</p>
               </div>
+            <div style={{display: "flex", justifyContent: "center"}}>
 
 
-              <div className=" pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ml-0 lg:ml-10" style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%", margin:"0 auto"}}>
-              <div style={{width: "250px", marginBottom: "40px"}} className="">
+              <div className=" pt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 " style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
+
+
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurAppplication} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white" }}></div>
+                    <img src={blurAppplication} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
+  
                   </div>
 
                   <div className="flex justify-center p-8 ">
                     <img src={appImage} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold"> أنشاء تطبيقات الهاتف </h1>
+                  <h1 className=" text-lg font-semibold "> أنشاء تطبيقات الهاتف </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
                   </div>
 
+                </div>
 
                 </div>
 
-                <div style={{width: "250px", marginBottom: "40px"}}>
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurCApplication} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white"}}></div>
-
+                    <img src={blurCApplication} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
+  
                   </div>
 
                   <div className="flex justify-center p-8 ">
                     <img src={CApplication} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold"> أنشاء التصاميم </h1>
+                  <h1 className=" text-lg font-semibold "> أنشاء التصاميم </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
@@ -327,12 +436,15 @@ export const MiddleContent = () => {
 
                 </div>
 
-                <div style={{width: "250px", marginBottom: "40px"}}>
+                </div>
+
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurWeb} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white"}}></div>
-  
+                    <img src={blurWeb} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
   
                   </div>
 
@@ -340,27 +452,31 @@ export const MiddleContent = () => {
                     <img src={Web} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold"> عمل تطبيقات الكمبيوتر </h1>
+                  <h1 className=" text-lg font-semibold "> عمل تطبيقات الكمبيوتر </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
                   </div>
+
                 </div>
 
-                <div style={{width: "250px", marginBottom: "40px"}}>
+                </div>
+
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurCWeb} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white"}}></div>
-
-
+                    <img src={blurCWeb} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
+  
                   </div>
 
                   <div className="flex justify-center p-8 ">
                     <img src={CWeb} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold">المواقع الألكترونية </h1>
+                  <h1 className=" text-lg font-semibold "> المواقع الألكترونية </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
@@ -368,11 +484,15 @@ export const MiddleContent = () => {
 
                 </div>
 
-                <div style={{width: "250px", marginBottom: "40px"}}>
+                </div>
+
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurGraphic} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white"}}></div>
+                    <img src={blurGraphic} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
   
                   </div>
 
@@ -380,7 +500,7 @@ export const MiddleContent = () => {
                     <img src={Graphic} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold">تصميم الكرافيكس</h1>
+                  <h1 className=" text-lg font-semibold "> تصميم الكرافيكس </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
@@ -388,12 +508,15 @@ export const MiddleContent = () => {
 
                 </div>
 
+                </div>
 
-                <div style={{width: "250px", marginBottom: "40px"}}>
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurMVP} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white"}}></div>
+                    <img src={blurMVP} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
   
                   </div>
 
@@ -401,7 +524,7 @@ export const MiddleContent = () => {
                     <img src={mvp} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold">MVP تصميم </h1>
+                  <h1 className=" text-lg font-semibold "> MVP تصميم  </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
@@ -409,11 +532,15 @@ export const MiddleContent = () => {
 
                 </div>
 
-                <div style={{width: "250px", marginBottom: "40px"}}>
+                </div>
+
+                <div style={{display: "flex", justifyContent: "center"}}>
+
+                <div className="blurDiv">
 
                   <div style={{position:"absolute"}}>
-                    <img src={blurProject} className=" object-cover rounded-lg" style={{width:"250px"}}/>
-                    <div className="blurDiv" style={{width:"100%", height:"100px", backgroundColor:"white"}}></div>
+                    <img src={blurProject} className=" object-cover rounded-lg" style={{width:"100%"}}/>
+                    <div className="" style={{width:"100%", height:"100px"}}></div>
   
                   </div>
 
@@ -421,7 +548,7 @@ export const MiddleContent = () => {
                     <img src={project} style={{width: "161.3px"}}/>
                   </div>
 
-                  <h1 className=" text-lg font-semibold"> خطط المشاريع الرقمية </h1>
+                  <h1 className=" text-lg font-semibold "> خطط المشاريع الرقمية </h1>
 
                   <div className="flex justify-center p-5 pt-3 ">
                     <p className="text-center text-sm" style={{zIndex:"2"}}> نقوم بتصميم و تنفيذ و اطلاق تطبيق هاتف من اجلك! على منصة اندرويد, ابل او كلاهما! </p>
@@ -429,10 +556,59 @@ export const MiddleContent = () => {
 
                 </div>
 
-              </div>
+                </div>
 
+              </div>
+              </div>
             </div>
 
+            {/* what are you waiting for section */}
+
+            <div className="bg-white md:flex justify-between p-10 " style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
+              <div className="flex justify-center mb-20 md:mb-0">
+              <div className="sm:flex">
+              <img style={{height: "56px"}} className=" p-5 pt-0 pb-0 m-5 sm:m-0 " src={whatsapp_Icon} />
+              <img style={{height: "56px"}} className=" p-5 pt-0 pb-0 m-5 sm:m-0" src={facebook_Icon} />
+              <img style={{height: "56px"}} className=" p-5 pt-0 pb-0 m-5 sm:m-0" src={phonecall_Icon} />
+              <img style={{height: "56px"}} className=" p-5 pt-0 pb-0 m-5 sm:m-0" src={email_Icon} />
+              </div>
+              </div>
+
+
+              <div>
+
+              <h1 className="text-bold font-bold text-4xl text-center md:text-start" style={{direction: "rtl"}}> ما الذي تنتظره! أتصل الأن! </h1>
+              <p className="text-md pt-3 text-center md:text-start" style={{direction: "rtl"}} > يمكنك الاتصال بنا الان بالطريقة التي تفضلها! </p>
+
+              </div>
+            </div>
+
+            {/* repetitive questions section */}
+
+            <div className="p-10" style={{backgroundColor: "#F5FCFF", paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
+
+              <h1 style={{lineHeight: "51.6px", color: "#969696"}} className="dsa font-bold text-4xl pb-1"> الأســألة المتكـررة </h1>
+
+              <p style={{textAlign: "center", color: "#969696"}}> ادناه بعض الأسئلة المتكررة الذي يسألها عملاؤنا و زبائننا الجدد </p>
+
+              <img src={myVector4} className="myVector4  hidden lg:flex "/>
+
+              <div className="pt-10" style={{ zIndex: "24", position: "relative"}}>
+                <p className="pb-10" style={{color: "#969696"}}> ما هي خدمات شركة "داخل الصندوق"؟ </p>
+
+                <p className="pb-10" style={{color: "#969696"}}> ما هي خدمات شركة "داخل الصندوق"؟ </p>
+
+                <p className="pb-10" style={{color: "#969696"}}> ما هي خدمات شركة "داخل الصندوق"؟ </p>
+
+                <p className="pb-10" style={{color: "#969696"}}> ما هي خدمات شركة "داخل الصندوق"؟ </p>
+
+                <p className="pb-10" style={{color: "#969696"}}> ما هي خدمات شركة "داخل الصندوق"؟ </p>
+
+              </div>
+
+              <img src={myVector5} className="myVector5  hidden lg:flex "/>
+
+            </div>
         </div>
 
     )
