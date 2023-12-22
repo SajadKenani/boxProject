@@ -5,7 +5,7 @@ import menu from "./images/menu.png"
 
 export const UpperContent = () => {
     return (
-        <div className=" " style={{padding: "0 9%", backgroundColor:"#F5FCFF"}}>
+        <div className=" fixed" style={{ backgroundColor:"#F5FCFF", zIndex: "14322", width: "100%", padding: "0 9%"}}>
             <nav class="p-4">
             <div class="container mx-auto flex justify-between items-center">
     
