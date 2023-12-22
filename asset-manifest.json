@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/boxProject/static/css/main.0749acad.css",
-    "main.js": "/boxProject/static/js/main.ff53b64e.js",
+    "main.css": "/boxProject/static/css/main.45e22500.css",
+    "main.js": "/boxProject/static/js/main.0cef55cb.js",
     "static/media/HomeImage.png": "/boxProject/static/media/HomeImage.7ffc13949c39a141bd6f.png",
     "static/media/sara_PFP.png": "/boxProject/static/media/sara_PFP.e7db5f94a185108cfe42.png",
     "static/media/ahmed_PFP.png": "/boxProject/static/media/ahmed_PFP.9d0cff1cbaf261138010.png",
@@ -19,17 +19,20 @@
     "static/media/Vector 3.png": "/boxProject/static/media/Vector 3.62e575fe16249e63860f.png",
     "static/media/Vector 2.png": "/boxProject/static/media/Vector 2.38f64e11d4ddf604c9f9.png",
     "static/media/project.png": "/boxProject/static/media/project.709637aaac144abb0d0c.png",
+    "static/media/whatsapp-icon.png": "/boxProject/static/media/whatsapp-icon.3c1baf10c84d9517013f.png",
     "static/media/Graphic.png": "/boxProject/static/media/Graphic.20e9d1d85150366e3d21.png",
     "static/media/mvp.png": "/boxProject/static/media/mvp.235c7b2b3cbd158b210e.png",
     "static/media/Web.png": "/boxProject/static/media/Web.e553e0a48f8f03692357.png",
+    "static/media/repititive-questions-vector.png": "/boxProject/static/media/repititive-questions-vector.be713b9c9182e67db531.png",
     "static/media/CApplication.png": "/boxProject/static/media/CApplication.a87e76189d7b391c8b10.png",
+    "static/media/Vector 5.png": "/boxProject/static/media/Vector 5.b782bb4dbfd9518f5919.png",
     "static/media/boxImage.png": "/boxProject/static/media/boxImage.5fc09e93af5da7031ec1.png",
     "index.html": "/boxProject/index.html",
-    "main.0749acad.css.map": "/boxProject/static/css/main.0749acad.css.map",
-    "main.ff53b64e.js.map": "/boxProject/static/js/main.ff53b64e.js.map"
+    "main.45e22500.css.map": "/boxProject/static/css/main.45e22500.css.map",
+    "main.0cef55cb.js.map": "/boxProject/static/js/main.0cef55cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0749acad.css",
-    "static/js/main.ff53b64e.js"
+    "static/css/main.45e22500.css",
+    "static/js/main.0cef55cb.js"
   ]
 }
