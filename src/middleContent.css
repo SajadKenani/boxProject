@@ -33,6 +33,17 @@ p{
 
 }
 
+
+
+h3{
+    font-family: "Changa";
+    direction: rtl;
+    text-align: start;
+
+}
+.button{
+    margin-bottom: -1px;
+}
 .homeImageContent{
    background: linear-gradient(90deg, rgba(245, 251, 255, 0) 1%, #ffffff 80%);
     width: 100%;
@@ -60,7 +71,7 @@ p{
     
     }
     .button{
-        margin-bottom: 175px;
+        margin-bottom: 174px;
     }
 
     .homeImageContent{
@@ -68,23 +79,29 @@ p{
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 934px) {
     #myMainTextt{
     line-height: 60px;
     
     }
     .button{
-        margin-bottom: 115px;
+        margin-bottom: 114px;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 510px) {
+    #myMainTextt{
+    line-height: 60px;
+    
+    }
     .button{
         margin-bottom: 90px;
     }
 }
 
-@media (max-width: 470px) {
+
+
+@media (max-width: 486px) {
     .button{
         margin-bottom: 30px;
     }
@@ -138,7 +155,36 @@ p{
 
     right: 0;
 
+    
+
 }
+
+.myVector4{
+    margin-top: -3%;
+    z-index: 35;
+
+    width: 196px;
+    height: 168px;
+
+    position: absolute;
+
+    left: 0;
+
+}
+
+.myVector5{
+    margin-top: -7%;
+    z-index: 5;
+
+    width: 196px;
+    height: 168px;
+
+    position: absolute;
+
+    right: 0;
+
+}
+
 
 #myBox{
     width: 400px;
@@ -180,6 +226,7 @@ p{
 @media (max-width: 580px) {
     .servicesPara{
         width: 90%;
+      
     }
 
 
@@ -191,7 +238,9 @@ p{
 
 
 .blurDiv{
-    background: linear-gradient(180deg, #F5FCFF 20%,  #ffffff 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.297) 10%,  #ffffffc2 100%);
     position: relative;
-
+    border-radius: 17px;
+    width: 90%;
+    margin-bottom: 40px;
 }
