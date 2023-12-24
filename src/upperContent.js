@@ -3,9 +3,39 @@ import Logo from "./images/Logo.png"
 
 import menu from "./images/menu.png"
 
+import { useState, useEffect } from "react"
+
 export const UpperContent = () => {
+
+    const [myPadding, setmypadding] = useState(window.innerWidth > 640 ? 10 : 2);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  
+  // Function to handle window resize
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+    // Additional logic based on the width change
+    if (window.innerWidth > 640) {
+      setmypadding(10)
+    } else {
+      setmypadding(-5)
+    }
+  };
+
+  // Add resize event listener when component mounts
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup: remove event listener when component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [])
+  
+
+    
+
     return (
-        <div className=" fixed" style={{ backgroundColor:"#F5FCFF", zIndex: "14322", width: "100%", padding: "0 9%"}}>
+        <div className=" fixed" style={{ backgroundColor:"#F5FCFF", zIndex: "14343222", width: "100%", paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
             <nav class="p-4">
             <div class="container mx-auto flex justify-between items-center">
     
@@ -30,8 +60,6 @@ export const UpperContent = () => {
         </div>
 
 
-
-        
             </div>
         </nav>
 
