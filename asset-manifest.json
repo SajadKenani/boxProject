@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/boxProject/static/css/main.45e22500.css",
-    "main.js": "/boxProject/static/js/main.0cef55cb.js",
+    "main.css": "/boxProject/static/css/main.4d01bea6.css",
+    "main.js": "/boxProject/static/js/main.f945b599.js",
     "static/media/HomeImage.png": "/boxProject/static/media/HomeImage.7ffc13949c39a141bd6f.png",
     "static/media/sara_PFP.png": "/boxProject/static/media/sara_PFP.e7db5f94a185108cfe42.png",
     "static/media/ahmed_PFP.png": "/boxProject/static/media/ahmed_PFP.9d0cff1cbaf261138010.png",
@@ -14,12 +14,17 @@
     "static/media/blurProject.png": "/boxProject/static/media/blurProject.c03c7b357650cdd9c121.png",
     "static/media/blurWeb.png": "/boxProject/static/media/blurWeb.93350abb0d4128a0ddee.png",
     "static/media/blurMVP.png": "/boxProject/static/media/blurMVP.14893734c4d54d1992f1.png",
+    "static/media/instagram-blur.png": "/boxProject/static/media/instagram-blur.de5093c3b3216ea5ef67.png",
+    "static/media/telegram-blur.png": "/boxProject/static/media/telegram-blur.cf88307dd252b26a13d1.png",
+    "static/media/whatsapp-blur.png": "/boxProject/static/media/whatsapp-blur.1eb28be58be34b958b2c.png",
     "static/media/CWeb.png": "/boxProject/static/media/CWeb.2a34dcdbfadb75e3f3e4.png",
     "static/media/appImage.png": "/boxProject/static/media/appImage.5c71982501d0fbfe95dd.png",
     "static/media/Vector 3.png": "/boxProject/static/media/Vector 3.62e575fe16249e63860f.png",
+    "static/media/instagram-icon.png": "/boxProject/static/media/instagram-icon.ef23f624a60b941d8763.png",
     "static/media/Vector 2.png": "/boxProject/static/media/Vector 2.38f64e11d4ddf604c9f9.png",
     "static/media/project.png": "/boxProject/static/media/project.709637aaac144abb0d0c.png",
     "static/media/whatsapp-icon.png": "/boxProject/static/media/whatsapp-icon.3c1baf10c84d9517013f.png",
+    "static/media/footer-box-image.png": "/boxProject/static/media/footer-box-image.6a443aabf69f153d8f00.png",
     "static/media/Graphic.png": "/boxProject/static/media/Graphic.20e9d1d85150366e3d21.png",
     "static/media/mvp.png": "/boxProject/static/media/mvp.235c7b2b3cbd158b210e.png",
     "static/media/Web.png": "/boxProject/static/media/Web.e553e0a48f8f03692357.png",
@@ -27,12 +32,13 @@
     "static/media/CApplication.png": "/boxProject/static/media/CApplication.a87e76189d7b391c8b10.png",
     "static/media/Vector 5.png": "/boxProject/static/media/Vector 5.b782bb4dbfd9518f5919.png",
     "static/media/boxImage.png": "/boxProject/static/media/boxImage.5fc09e93af5da7031ec1.png",
+    "static/media/telegram-icon.png": "/boxProject/static/media/telegram-icon.b9d8a2a8b193e9aa45bc.png",
     "index.html": "/boxProject/index.html",
-    "main.45e22500.css.map": "/boxProject/static/css/main.45e22500.css.map",
-    "main.0cef55cb.js.map": "/boxProject/static/js/main.0cef55cb.js.map"
+    "main.4d01bea6.css.map": "/boxProject/static/css/main.4d01bea6.css.map",
+    "main.f945b599.js.map": "/boxProject/static/js/main.f945b599.js.map"
   },
   "entrypoints": [
-    "static/css/main.45e22500.css",
-    "static/js/main.0cef55cb.js"
+    "static/css/main.4d01bea6.css",
+    "static/js/main.f945b599.js"
   ]
 }
