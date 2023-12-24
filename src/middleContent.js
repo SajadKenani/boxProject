@@ -276,7 +276,7 @@ export const MiddleContent = () => {
               </div>
 
               <div className="lg:flex justify-center lg:justify-end item-end -pt-3 pb-28 mr-3 md:grid md:mr-3 grid">
-                    <button id="myButton" className="text-sm text-blue-400 h-10 rounded-full bg-white-400 lg:order-0 order-1" > أخر مشروع منجز</button>
+                    <button id="myButton" className="text-sm text-blue-400 h-10 rounded-full bg-white-400 lg:order-0 order-1 mr-0 lg:mr-5" > أخر مشروع منجز</button>
                     <button id="myButton" className="text-sm text-white w-56 h-10 rounded-full bg-blue-400 lg:order-1 order-0 ">مشاهدة الفيديو التعريفي</button>
               </div>
 
