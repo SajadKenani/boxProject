@@ -919,15 +919,15 @@ export const MiddleContent = () => {
 
           <div className="">
             <div className="">
-              <input placeholder=" البريد الألكتروني " className="myButton0 myInput h-14 m-3 mb-1"/>
-              <input placeholder=" الأسم الأخير " className="myButton1 myInput h-14 m-3 mb-1" />
-              <input placeholder=" الأسم الأول "  className="myButton2 myInput h-14 m-3 mb-1"/>
+              <input placeholder="البريد الألكتروني" className="myButton0 myInput h-14 m-3 mb-1"/>
+              <input placeholder="الأسم الأخير" className="myButton1 myInput h-14 m-3 mb-1" />
+              <input placeholder="الأسم الأول"  className="myButton2 myInput h-14 m-3 mb-1"/>
             </div>
 
             <div className="">
-              <input className="myButton3 myInput lg:w-20 h-14 m-3 mb-1" placeholder=" أسم الشركة/المؤسسة " />
-              <input className="myButton4 myInput lg:w-20 h-14 m-3 mb-1" placeholder=" موقع الشركة/المؤسسة " />
-              <input className="myButton5 myInput lg:w-20 h-14 m-3 mb-1" placeholder=" عنوان الرسالة " />
+              <input placeholder="أسم الشركة/المؤسسة" className="myButton3 myInput lg:w-20 h-14 m-3 mb-1"  />
+              <input placeholder="موقع الشركة/المؤسسة" className="myButton4 myInput lg:w-20 h-14 m-3 mb-1"  />
+              <input placeholder="عنوان الرسالة"  className="myButton5 myInput lg:w-20 h-14 m-3 mb-1" />
             </div>
 
             <div>
