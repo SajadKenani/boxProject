@@ -925,9 +925,9 @@ export const MiddleContent = () => {
             </div>
 
             <div className="">
-              <input placeholder="أسم الشركة/المؤسسة" className="myButton3 myInput lg:w-20 h-14 m-3 mb-1"  />
-              <input placeholder="موقع الشركة/المؤسسة" className="myButton4 myInput lg:w-20 h-14 m-3 mb-1"  />
-              <input placeholder="عنوان الرسالة"  className="myButton5 myInput lg:w-20 h-14 m-3 mb-1" />
+              <input placeholder="أسم الشركة/المؤسسة" className="myButton3 myInput h-14 m-3 mb-1"  />
+              <input placeholder="موقع الشركة/المؤسسة" className="myButton4 myInput h-14 m-3 mb-1"  />
+              <input placeholder="عنوان الرسالة"  className="myButton5 myInput  h-14 m-3 mb-1" />
             </div>
 
             <div>
