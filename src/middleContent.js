@@ -3,23 +3,23 @@ import HomeImage from "./images/HomeImage.png"
 import shareLinkIcon from "./images/shareLinkIcon.png"
 import copyLinkIcon from "./images/copyLinkIcon.png"
 
-import myVector from "./images/Vector 2.png"
-import myVector2 from "./images/Vector 4.png"
-import myVector3 from "./images/Vector 3.png"
+import myVector from "./images/Vector-2.webp"
+import myVector2 from "./images/Vector-4.webp"
+import myVector3 from "./images/Vector-3.webp"
 import myVector4 from "./images/repititive-questions-vector.png"
 import myVector5 from "./images/Vector 5.png"
 
 import myPenIcom from "./images/penIcon.png"
 import moneySignIcon from "./images/moneySignIcon.png"
-import speedIcon from "./images/speedIcon.png"
+import speedIcon from "./images/speedIcon.webp"
 import bagIcon from "./images/bagIcon.png"
-import starsIcon from "./images/starsIcon.png"
+import starsIcon from "./images/starsIcon.webp"
 import clientAssistanceIcon from "./images/clientAssistanceIcon.png"
 import boxImage from "./images/boxImage.png"
 
-import sara_pfp from "./images/sara_PFP.png"
-import ahmed_pfp from "./images/ahmed_PFP.png"
-import abdullah_pfp from "./images/abdullah-PFP.png"
+import sara_pfp from "./images/sara_PFP.webp"
+import ahmed_pfp from "./images/ahmed_PFP.webp"
+import abdullah_pfp from "./images/abdullah-PFP.webp"
 
 import blurAppplication from "./images/blurAppplication.png"
 import blurCApplication from "./images/blurCApplication.png"
@@ -45,9 +45,9 @@ import email_Icon from "./images/email-icon.png"
 import instagram_Icon from "./images/instagram-icon.png";
 import telegram_Icon from "./images/telegram-icon.png";
 
-import instagram_blur from "./images/instagram-blur.png";
-import whatsapp_blur from "./images/whatsapp-blur.png";
-import telegram_blur from "./images/telegram-blur.png";
+import instagram_blur from "./images/instagram-blur.webp";
+import whatsapp_blur from "./images/whatsapp-blur.webp";
+import telegram_blur from "./images/telegram-blur.webp";
 
 import copy_link_bold from "./images/copy_link_bold.png"
 
@@ -133,8 +133,8 @@ export const MiddleContent = () => {
                 </div>
 
                 <div className="sm:flex justify-end item-end pt-10 pb-28 button grid sm:justify-end justify-center">
-                  <button id="myButton" className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400 order-2">تصـفـح أعمالنا</button>
-                  <button id="myButton" className="text-sm text-white w-40 h-10 rounded-full bg-blue-400 order-1">أعرف المزيد</button>
+                  <button id="myButton" className="text-sm text-blue-400 w-40 h-10 rounded-full bg-white-400 order-2 lg:order-1">تصـفـح أعمالنا</button>
+                  <button id="myButton" className="text-sm text-white w-40 h-10 rounded-full order-1 lg:order-2" style={{backgroundColor: "#2997D8"}}>أعرف المزيد</button>
                 </div>
 
             </div>
@@ -306,7 +306,7 @@ export const MiddleContent = () => {
 
                   <div className="p-2 justify-end mb-5">
                     <h2 className="text-xl font-semibold -mb-1 p-2" style={{textAlign:"end"}}>الدقة والجودة</h2>
-                    <p className="text-black-600 p-2">نحن نضمن الدقة والجودة في كل تفاصيل تصميم المواقع الإلكترونية لضمان تحقيق أهدافك وتلبية توقعات عملائك بسهولة وسرعة.</p>      
+                    <p className="text-black-600 p-2">نحن نضمن الدقة والجودة في كل تفاصيل المواقع الإلكترونية لضمان تحقيق أهدافك وتلبية توقعات عملائك بسهولة وسرعة.</p>      
                   </div>
 
                 </div>
@@ -416,7 +416,7 @@ export const MiddleContent = () => {
 
             {/* Our Services Section */}
 
-            <div style={{backgroundColor:"#F5FCFF"}}> 
+            {/* <div style={{backgroundColor:"#F5FCFF"}}> 
 
  
               <h1 className=" text-4xl p-2 pt-10 pb-2" style={{color:"#61B7EA", fontWeight:"600"}}>الخـــدمـات</h1>
@@ -600,7 +600,7 @@ export const MiddleContent = () => {
 
               </div>
               </div>
-            </div>
+            </div> */}
 
             {/* what are you waiting for section */}
             <div className="mySection"  >
