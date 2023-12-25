@@ -1,3 +1,73 @@
 a{
     font-family: "Changa";
+
+
+}
+
+
+
+
+
+
+@keyframes fadeAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideAnimation {
+from {
+    transform: translateX(-500px);
+}
+to {
+    transform: translateX(0px);
+}
+  }
+
+@keyframes fadeAnimation2 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideAnimation2 {
+  from {
+      transform: translateX(0px);
+  }
+  to {
+      transform: translateX(-500px);
+  }
+    }
+
+.shadow-div{
+animation: fadeAnimation 0.5s;
+}
+
+.side-bar{
+    animation: slideAnimation 0.5s;
+}
+
+.hide-shadow{
+    animation: fadeAnimation2 0.5s;
+    }
+    
+.hide-bar{
+    animation: slideAnimation2 0.5s;
+    width: 0;
+}
+
+.bar {
+    width: 350px;
+}
+
+@media (max-width: 700px) {
+    .bar {
+        width: 70%;
+    }
 }
