@@ -1,0 +1,446 @@
+body{
+    overflow-x: hidden;
+}
+
+
+.homeImage{
+    width: 100%;
+    height: 595px;
+
+ position: absolute;
+ object-fit: cover;
+}
+
+h1{
+    font-family: "Changa";
+
+}
+
+h2{
+    font-family: "Changa";
+
+}
+
+#myButton{
+    font-family: "Changa";
+}
+
+p{
+    font-family: "Changa";
+    direction: rtl;
+    text-align: start;
+
+
+}
+
+
+
+h3{
+    font-family: "Changa";
+    direction: rtl;
+    text-align: start;
+
+}
+.button{
+    margin-bottom: -1px;
+}
+.homeImageContent{
+   background: linear-gradient(90deg, rgba(245, 251, 255, 0) 1%, #ffffff 80%);
+    width: 100%;
+    height: fit-content;
+
+    z-index: 2;
+    color: black;
+    position: relative;
+
+    text-align: end;
+
+    font-weight: 500;
+   
+}
+
+@media (max-width: 640px) {
+    .homeImageContent{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.205) 0%, #ffffffbe 20%);
+    }
+    
+}
+
+#myMainText{
+    line-height: 110px;
+    width: 800px; 
+    margin-top: 100px;
+}
+
+@media (max-width: 1023px) {
+    #myMainText{
+    line-height: 60px;
+    
+    }
+    .button{
+        margin-bottom: 174px;
+    }
+
+    .homeImageContent{
+        padding-bottom: 1px;
+    }
+}
+
+@media (max-width: 934px) {
+    #myMainTextt{
+    line-height: 60px;
+    
+    }
+    .button{
+        margin-bottom: 114px;
+    }
+}
+
+@media (max-width: 640px) {
+    #myMainTextt{
+    line-height: 60px;
+    
+    }
+    .button{
+        margin-bottom: 74px;
+    }
+}
+
+
+
+@media (max-width: 442px) {
+    .button{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 409px) {
+    .button{
+        margin-bottom: -10px;
+    }
+}
+
+
+@media (max-width: 308px) {
+    .button{
+        margin-bottom: -94px;
+    }
+}
+
+.shareLink-div{
+    background: linear-gradient(90deg, #E5EFF6 10%,  #F5FCFF 50%);
+
+}
+
+
+
+.mainOurProject-Section{
+    background-color:#F5FCFF;
+    position:relative;
+    height:fit-content;
+    
+ 
+}
+
+@keyframes fadeAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.myObject{
+    animation: fadeAnimation 0.5s;
+}
+
+.myVector1{
+    margin-top: -40%;
+    z-index: 35;
+    position: absolute;
+    width: 211px;
+    height: 201px;
+
+
+}
+
+.myVector2{
+    margin-top: -10%;
+    z-index: 35;
+    position: absolute;
+    width: 331px;
+    height: 340px;
+
+
+}
+
+
+.myVector3{
+    margin-top: -6%;
+    z-index: 35;
+
+    width: 196px;
+    height: 168px;
+
+    position: absolute;
+
+
+    right: 0;
+
+    
+
+}
+
+.myVector4{
+    margin-top: -3%;
+    z-index: 35;
+
+    width: 196px;
+    height: 168px;
+
+    position: absolute;
+
+    left: 0;
+
+}
+
+.myVector5{
+    margin-top: -7%;
+    z-index: 5;
+
+    width: 196px;
+    height: 168px;
+
+    position: absolute;
+
+    right: 0;
+
+}
+
+@media (max-width: 1024px) {
+    .mySection{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+}
+
+
+#myBox{
+    width: 400px;
+   
+}
+
+.longPara{
+    text-align:center;
+    width:740px;
+
+}
+
+.copyDiv{
+
+    animation-name: copyAnimation;
+    animation-duration: 1s;
+   
+}
+
+@keyframes copyAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@media (max-width: 770px) {
+    .longPara{
+
+        width:80%;
+    
+    }
+}
+
+
+@media (max-width: 640px) {
+    #myBox{
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 470px) {
+    #myBox{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 580px) {
+    .servicesPara{
+        width: 90%;
+      
+    }
+
+
+}
+
+
+.field-div{
+
+    width: 310px;
+    height: 100px;
+
+    background-color: #a5a5a52b;
+    border-radius: 14px;
+}
+
+
+.isntagram-blur-div{
+
+    width: 310px;
+    height: 100px;
+
+    border-radius: 14px;
+
+    position: absolute;
+}
+
+.whatsapp-blur-div{
+
+    width: 310px;
+    height: 100px;
+
+    border-radius: 14px;
+
+    position: absolute;
+}
+
+
+.tetegram-blur-div{
+
+    width: 310px;
+    height: 100px;
+
+    border-radius: 14px;
+
+    position: absolute;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: gray;
+
+    margin-bottom: 60px;
+
+
+}
+
+.myInput{
+    border: #D1D1D6 solid 2px;
+
+    
+    font-family: "Changa";
+    font-size: 14px;
+    font-weight: 500;
+
+    border-radius: 8px;
+
+    text-align: end;
+
+    padding: 5px;
+    padding-right: 10px;
+
+    outline: 0;
+    
+}
+
+.myInput::placeholder{
+    color: #2C2C2E;
+}
+
+.myButton0{
+width: 32.5%;
+}
+
+.myButton1{
+width: 22%;
+}
+
+.myButton2{
+width: 22.5%;
+}
+
+.myButton3{
+width: 16%;
+}
+
+.myButton4{
+width: 15%;
+}
+
+.myButton5{
+width: 46%;
+}
+
+.myButton6{
+    width: 80%
+}
+
+.mySendingButton{
+    text-align: start;
+    background-color: #2997D8;
+
+    border-radius: 100px;
+
+    font-family: "Changa";
+}
+
+@media (max-width: 1024px) {
+
+    .myButton0{
+        width: 95%
+    }
+    
+    .myButton1{
+        width: 95%
+    }
+    
+    .myButton2{
+        width: 95%
+    }
+    
+    .myButton3{
+        width: 95%
+    }
+    
+    .myButton4{
+        width: 95%
+    }
+    
+    .myButton5{
+        width: 95%
+    }
+
+    .myButton6{
+        width: 95%
+    }
+
+    .mySendingButton{
+        height: 65px;
+        margin-top: 15px;
+    
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+.blurDiv{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.297) 10%,  #ffffffc2 100%);
+    position: relative;
+    border-radius: 17px;
+    width: 90%;
+    margin-bottom: 40px;
+}
