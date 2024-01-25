@@ -549,7 +549,7 @@ export const MiddleContent = () => {
                 <div className=" pt-5 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-20 mb-60" style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}>
 
                 <div className="field-div flex justify-end -mb-14 lg:order-2 " >
-                    <img className="isntagram-blur-div " style={{paddingLeft: "120px"}} src={instagram_blur} />
+                    <img className="isntagram-blur-div "  src={instagram_blur} />
 
                   <div className="p-4"> 
                     
@@ -571,7 +571,7 @@ export const MiddleContent = () => {
                   </div>
 
                   <div className="field-div flex justify-end -mb-14 lg:order-1" >
-                    <img className="isntagram-blur-div " style={{paddingLeft: "120px"}} src={whatsapp_blur} />
+                    <img className="isntagram-blur-div " src={whatsapp_blur} />
 
                   <div className="p-4 " > 
                     
@@ -593,7 +593,7 @@ export const MiddleContent = () => {
                   </div>
 
                   <div className="field-div flex justify-end -mb-14 lg:order-1" >
-                    <img className="isntagram-blur-div " style={{paddingLeft: "120px"}} src={telegram_blur} />
+                    <img className="isntagram-blur-div "  src={telegram_blur} />
 
                   <div className="p-4 "> 
                     
