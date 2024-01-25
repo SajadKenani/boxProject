@@ -162,8 +162,11 @@ export const MiddleContent = () => {
     };
   }, [])
 
-  const [messagesent, usemessagesent] = useState(false)
+  const [messagesent, usemessagesent] = useState(false);
+  const [messagesenterror, usemessagesenterror] = useState(false);
   const form = useRef();
+
+
 
   const sendEmail  = (e) => {
 
@@ -172,19 +175,24 @@ export const MiddleContent = () => {
     emailjs.sendForm('service_go5peen', 'template_4jm1jq9', form.current, 'O8A6Qpd4686S4osOT')
       .then( async (result) => {
           console.log(result.text);
-          usemessagesent(true);
 
-          const myButton = document.getElementById('myButtonId');
+          const myButton = document.getElementById("mySendButton");
+
           if (myButton) {
-              myButton.disabled = true;
-              myButton.classList.replace("submitButton", "disabledSubmitButton");
-            }
+            myButton.classList.replace("mySendingButton", "mySendingButtonDisabled");
+            myButton.disabled = true;
+            usemessagesent(true)
+            await new Promise(resolve => setTimeout(resolve, 5000));
+            usemessagesent(false)
+          }
 
-            
-              
 
-      }, (error) => {
+      }, async (error) => {
           console.log(error.text);
+
+          usemessagesenterror(true)
+          await new Promise(resolve => setTimeout(resolve, 5000));
+          usemessagesenterror(false)
       });
   };
 
@@ -198,6 +206,14 @@ export const MiddleContent = () => {
 
     return (
       <ScrollProvider>
+      {messagesent && <div style={{position: "fixed", borderRadius: "5px 0px 0 5px", marginTop: "80px", padding: "20px", width: "350px", height: "100px", right: "0", backgroundColor: "#F5FCFF", zIndex: "321312321321321321321321312321321321"}} className="fixed w-20 h-20 bg-white apperance">
+        <p>تم الارسال! سنتواصل معك بأقرب وقت.</p>
+      </div>}
+
+      {messagesenterror && <div style={{position: "fixed", borderRadius: "5px 0px 0 5px", marginTop: "80px", padding: "20px", width: "350px", height: "100px", right: "0", backgroundColor: "#fd4c4c", zIndex: "321312321321321321321321312321321321"}} className="fixed w-20 h-20 bg-white apperance">
+        <p className="text-white">عذرا، لم يتم أرسال رسالتك.</p>
+      </div>}
+
         <div >
           <div id="mainSection" style={{height: "60px"}}></div>
             {/* Home Section */}
@@ -634,7 +650,7 @@ export const MiddleContent = () => {
 
 
           <div className="flex justify-start mySendingButton-div mb-20" style={{paddingLeft: myPadding+"%", paddingRight:  myPadding+"%"}}> 
-          <button className="mySendingButton p-14 pt-3 pb-3 text-white " href="mailto:sajadkenani999@gmail.com"> أرســـال </button>
+          <button id="mySendButton" className="mySendingButton p-14 pt-3 pb-3 text-white " href="mailto:sajadkenani999@gmail.com"> أرســـال </button>
           </div>
           </form>
 
