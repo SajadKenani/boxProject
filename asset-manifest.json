@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/boxProject/static/css/main.576f278b.css",
-    "main.js": "/boxProject/static/js/main.fc23f114.js",
+    "main.js": "/boxProject/static/js/main.b69115c1.js",
     "static/media/HomeImage.png": "/boxProject/static/media/HomeImage.7ffc13949c39a141bd6f.png",
     "static/media/blurGraphic.png": "/boxProject/static/media/blurGraphic.da9e058499e69099a82f.png",
     "static/media/blurCWeb.png": "/boxProject/static/media/blurCWeb.4ceadc21cacefaf4b398.png",
@@ -33,10 +33,10 @@
     "index.html": "/boxProject/index.html",
     "static/media/menu.webp": "/boxProject/static/media/menu.94121b57c923baea99e6.webp",
     "main.576f278b.css.map": "/boxProject/static/css/main.576f278b.css.map",
-    "main.fc23f114.js.map": "/boxProject/static/js/main.fc23f114.js.map"
+    "main.b69115c1.js.map": "/boxProject/static/js/main.b69115c1.js.map"
   },
   "entrypoints": [
     "static/css/main.576f278b.css",
-    "static/js/main.fc23f114.js"
+    "static/js/main.b69115c1.js"
   ]
 }
