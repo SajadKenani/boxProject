@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/boxProject/static/css/main.a86e086f.css",
-    "main.js": "/boxProject/static/js/main.62a69519.js",
+    "main.css": "/boxProject/static/css/main.576f278b.css",
+    "main.js": "/boxProject/static/js/main.fc23f114.js",
     "static/media/HomeImage.png": "/boxProject/static/media/HomeImage.7ffc13949c39a141bd6f.png",
     "static/media/blurGraphic.png": "/boxProject/static/media/blurGraphic.da9e058499e69099a82f.png",
     "static/media/blurCWeb.png": "/boxProject/static/media/blurCWeb.4ceadc21cacefaf4b398.png",
@@ -32,11 +32,11 @@
     "static/media/speedIcon.webp": "/boxProject/static/media/speedIcon.a1fdba4d167fa7b31bca.webp",
     "index.html": "/boxProject/index.html",
     "static/media/menu.webp": "/boxProject/static/media/menu.94121b57c923baea99e6.webp",
-    "main.a86e086f.css.map": "/boxProject/static/css/main.a86e086f.css.map",
-    "main.62a69519.js.map": "/boxProject/static/js/main.62a69519.js.map"
+    "main.576f278b.css.map": "/boxProject/static/css/main.576f278b.css.map",
+    "main.fc23f114.js.map": "/boxProject/static/js/main.fc23f114.js.map"
   },
   "entrypoints": [
-    "static/css/main.a86e086f.css",
-    "static/js/main.62a69519.js"
+    "static/css/main.576f278b.css",
+    "static/js/main.fc23f114.js"
   ]
 }
