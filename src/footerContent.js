@@ -46,9 +46,9 @@ export const FooterContent = () => {
 
                     <h1 className="pb-6 text-center lg:text-end font-semibold" style={{color: "#FCFCFC"}}> التــواصل الأجتماعي</h1>
 
-                    <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.facebook.com/")}> فــيسبوك </a>
-                    <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.instagram.com/")}> أنستاكــرام </a>
-                    <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.whatsapp.com/")}> واتس اب </a>
+                    <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.facebook.com/profile.php?id=61550600312612&mibextid=LQQJ4d")}> فــيسبوك </a>
+                    <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.instagram.com/inbox_team?igsh=dDR2cDYwcG9ubGdt")}> أنستاكــرام </a>
+                    <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://wa.me/+9647858002915")}> واتس اب </a>
                     <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.inboxcompany.com/")}> موقعــنا </a>
                     <a href="mailto:inboxcomp@hotmail.com?subject=HTML%20link" className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}}> البريد الألكتروني </a>
 
