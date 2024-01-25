@@ -88,7 +88,7 @@ export const FooterContent = () => {
             </div>
 
             <div>
-                <p className="text-center p-2"> جميع الحقـوق محفوظة لشركة داخل الصندوق • 2023 © </p>
+                <p className="text-center p-2"> جميع الحقـوق محفوظة لشركة داخل الصندوق • 2024 © </p>
 
             </div>
         </div>
