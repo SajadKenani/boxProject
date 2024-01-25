@@ -499,7 +499,7 @@ export const MiddleContent = () => {
               <a href="sms:+9647858002915?&body=Hi%2520there%252C%2520I%2527d%2520like%2520to%2520place%2520an%2520order%2520for..." className="p-5 pt-0 pb-0 -m-3 mt-0 lg:m-5 sm:m-0">
                <img style={{ height: "56px", cursor: "pointer" }}  src={phonecall_Icon} alt="Email Agent" />
               </a>
-              <a href="mailto:inboxcomp@hotmail.com?subject=HTML%20link" className=" p-5 pt-0 pb-0 -m-3 mt-0 lg:m-5 sm:m-0">
+              <a href="mailto:inboxcomp@hotmail.com?subject=From%InBox%Website" className=" p-5 pt-0 pb-0 -m-3 mt-0 lg:m-5 sm:m-0">
                 <img style={{height: "56px", cursor: "pointer"}}  src={email_Icon} />
               </a>
               </div>
