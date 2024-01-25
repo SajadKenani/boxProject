@@ -142,6 +142,12 @@ h3{
  
 }
 
+.apperance{
+    animation-name: fadeAnimation;
+    animation-duration: 1s;
+
+}
+
 @keyframes fadeAnimation {
     from {
       opacity: 0;
@@ -304,6 +310,38 @@ h3{
     border-radius: 14px;
 
     position: absolute;
+
+    padding-left: 120px;
+
+    animation-name: animationLeft;
+    animation-duration: 1s;
+}
+
+.isntagram-blur-div:hover{
+
+    width: 310px;
+    height: 100px;
+
+    border-radius: 14px;
+
+    position: absolute;
+
+    padding-left: 0px;
+
+    animation-name: animationRight;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes animationRight {
+    from {padding-left: 120px;}
+    to {padding-left: 0px;}
+}
+
+@keyframes animationLeft {
+    from {padding-left: 0px;}
+    to {padding-left: 120px;}
 }
 
 .whatsapp-blur-div{
@@ -396,7 +434,15 @@ width: 46%;
 
     font-family: "Changa";
 }
+.mySendingButtonDisabled{
+    background-color: #2C2C2E;
 
+    text-align: start;
+
+    border-radius: 100px;
+
+    font-family: "Changa";
+}
 @media (max-width: 1024px) {
 
     .myButton0{
