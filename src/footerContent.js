@@ -50,7 +50,7 @@ export const FooterContent = () => {
                     <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.instagram.com/inbox_team?igsh=dDR2cDYwcG9ubGdt")}> أنستاكــرام </a>
                     <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://wa.me/+9647858002915")}> واتس اب </a>
                     <a  className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}} onClick={() => window.location.assign("https://www.inboxcompany.com/")}> موقعــنا </a>
-                    <a href="mailto:inboxcomp@hotmail.com?subject=HTML%20link" className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}}> البريد الألكتروني </a>
+                    <a href="mailto:inboxcomp@hotmail.com?subject=From%20InBox%20Website" className=" pb-4 text-center lg:text-end" style={{color: "#FCFCFC"}}> البريد الألكتروني </a>
 
 
                     </div>
